@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Credit Card Validation</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Checkout!</h1>
+            </div>
+            <div class="payment">
+                <form method="POST" action="/">
+                    <div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Card Number</label>
+                        <input name="Card Number" type="text" class="form-control" id="cardNumber" title="Please enter your Credit Card Number!" required maxlength="18">
+                    </div>
+                    <div class="CVV">
+                        <label for="cvv">CVV</label>
+                        <input name="CVV" type="text" class="form-control" id="cvv" title="Please enter your CVV!" required maxlength="3">
+                    </div>
+                    <div class="form-group" id="expiration-date">
+                        <label>Expiration Date</label>
+                        <select name="Expiry Month">
+                            <option value="January">January</option>
+                            <option value="February">February </option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="Expiry Year"'>
+                            <option value="2021"> 2021</option>
+                            <option value="2022"> 2022</option>
+                            <option value="2023"> 2023</option>
+                            <option value="2024"> 2024</option>
+                            <option value="2025"> 2025</option>
+                            <option value="2026"> 2026</option>
+                            <option value="2027"> 2027</option>
+                            <option value="2028"> 2028</option>
+                            <option value="2029"> 2029</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="credit_cards">
+                        <img src="images/visa.jpg" id="visa">
+                        <img src="images/mastercard.jpg" id="mastercard">
+                        <img src="images/amex.jpg" id="amex">
+                    </div>
+                    <div class="form-group" id="pay-now">
+                        <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- <script src="server.js"></script> -->
+</body>
+
+</html>
